@@ -35,18 +35,21 @@ const Checkout = () => {
     }
   };
 
+  // 🐛 BUG 11 y 13: Validación comentada - acepta campos vacíos y teléfonos con letras
   const validate = () => {
     const newErrors = {};
 
-    if (!formData.name.trim()) newErrors.name = 'El nombre es requerido';
-    if (!formData.email.trim()) {
-      newErrors.email = 'El email es requerido';
-    } else if (!isValidEmail(formData.email)) {
-      newErrors.email = 'Email inválido';
-    }
-    if (!formData.phone.trim()) newErrors.phone = 'El teléfono es requerido';
-    if (!formData.address.trim()) newErrors.address = 'La dirección es requerida';
-    if (!formData.city.trim()) newErrors.city = 'La ciudad es requerida';
+    // BUG 11: Comenté todas las validaciones de campos requeridos
+    // if (!formData.name.trim()) newErrors.name = 'El nombre es requerido';
+    // if (!formData.email.trim()) {
+    //   newErrors.email = 'El email es requerido';
+    // } else if (!isValidEmail(formData.email)) {
+    //   newErrors.email = 'Email inválido';
+    // }
+    // if (!formData.phone.trim()) newErrors.phone = 'El teléfono es requerido';
+    // BUG 13: No valida que el teléfono contenga solo números
+    // if (!formData.address.trim()) newErrors.address = 'La dirección es requerida';
+    // if (!formData.city.trim()) newErrors.city = 'La ciudad es requerida';
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;

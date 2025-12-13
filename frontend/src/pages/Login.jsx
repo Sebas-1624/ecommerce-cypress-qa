@@ -28,16 +28,19 @@ const Login = () => {
   const validate = () => {
     const newErrors = {};
 
+    // 🐛 BUG 10: Acepta email sin @ (comenté la validación)
     if (!formData.email.trim()) {
       newErrors.email = 'El email es requerido';
-    } else if (!isValidEmail(formData.email)) {
-      newErrors.email = 'Email inválido';
     }
+    // } else if (!isValidEmail(formData.email)) {
+    //   newErrors.email = 'Email inválido';
+    // }
 
+    // 🐛 BUG 14: Acepta password de solo 2 caracteres
     if (!formData.password.trim()) {
       newErrors.password = 'La contraseña es requerida';
-    } else if (formData.password.length < 6) {
-      newErrors.password = 'La contraseña debe tener al menos 6 caracteres';
+    } else if (formData.password.length < 2) { // BUG: Cambié de 6 a 2
+      newErrors.password = 'La contraseña debe tener al menos 2 caracteres';
     }
 
     setErrors(newErrors);
