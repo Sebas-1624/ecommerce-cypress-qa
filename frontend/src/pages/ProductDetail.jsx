@@ -52,8 +52,9 @@ const ProductDetail = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
+      {/* 🐛 BUG 16: Botón "Volver" no hace nada (comenté el onClick) */}
       <button
-        onClick={() => navigate(-1)}
+        // onClick={() => navigate(-1)}
         className="mb-6 text-blue-600 hover:text-blue-800 flex items-center"
       >
         ← Volver

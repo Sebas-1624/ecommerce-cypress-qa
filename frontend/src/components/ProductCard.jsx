@@ -36,8 +36,9 @@ const ProductCard = ({ product }) => {
         </p>
         
         <div className="flex items-center justify-between mt-4">
+          {/* 🐛 BUG 19: Precio siempre muestra $0 */}
           <span className="text-2xl font-bold text-blue-600">
-            {formatPrice(product.price)}
+            {formatPrice(0)}
           </span>
           
           <span className="text-sm text-gray-500">
