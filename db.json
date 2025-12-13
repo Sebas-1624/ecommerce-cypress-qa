@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Laptop HP Pavilion 15",
       "price": 2500000,
       "category": "laptops",
@@ -12,18 +12,18 @@
       "rating": 4.5
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "iPhone 15 Pro Max",
       "price": 4500000,
       "category": "phones",
       "brand": "Apple",
-      "image": "https://images.unsplash.com/photo-1592286927505-739456b640a0?w=400",
+      "image": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400",
       "description": "iPhone 15 Pro Max 256GB, Titanio Negro",
       "stock": 5,
       "rating": 5
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Samsung Galaxy S24 Ultra",
       "price": 3800000,
       "category": "phones",
@@ -32,18 +32,370 @@
       "description": "Samsung Galaxy S24 Ultra 512GB con S Pen",
       "stock": 8,
       "rating": 4.8
-    }
+    }, 
+
+{
+  "id": "4",
+  "name": "MacBook Air M2",
+  "price": 4800000,
+  "category": "laptops",
+  "brand": "Apple",
+  "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400",
+  "description": "MacBook Air 13 pulgadas, Chip M2, 8GB RAM, 256GB SSD",
+  "stock": 5,
+  "rating": 4.9
+},
+
+         {
+      "id": "5",
+      "name": "Redmi Note 14 5g",
+      "price": 949000,
+      "category": "phones",
+      "brand": "Xiaomi",
+      "image":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
+      "description": "Pantalla AMOLED de 6.67 144hz procesador Dimensity 8300-ultra",
+      "stock": 10,
+      "rating": 4.5
+    },
+{
+  "id": "6",
+  "name": "Dell Inspiron 15",
+  "price": 2200000,
+  "category": "laptops",
+  "brand": "Dell",
+  "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=400",
+  "description": "Dell Inspiron 15.6 pulgadas, Intel Core i5, 8GB RAM, 512GB SSD",
+  "stock": 12,
+  "rating": 4.3
+},
+{
+  "id": "7",
+  "name": "Lenovo ThinkPad X1",
+  "price": 5200000,
+  "category": "laptops",
+  "brand": "Lenovo",
+  "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400",
+  "description": "Lenovo ThinkPad X1 Carbon, Intel Core i7, 16GB RAM, 1TB SSD",
+  "stock": 7,
+  "rating": 4.7
+},
+{
+  "id": "8",
+  "name": "ASUS ROG Zephyrus",
+  "price": 6500000,
+  "category": "laptops",
+  "brand": "ASUS",
+  "image": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400",
+  "description": "ASUS ROG Gaming, AMD Ryzen 9, RTX 4060, 32GB RAM, 1TB SSD",
+  "stock": 4,
+  "rating": 4.8
+},
+{
+  "id": "9",
+  "name": "Acer Aspire 5",
+  "price": 1850000,
+  "category": "laptops",
+  "brand": "Acer",
+  "image": "https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=400",
+  "description": "Acer Aspire 5, Intel Core i3, 8GB RAM, 256GB SSD",
+  "stock": 15,
+  "rating": 4.1
+},
+{
+  "id": "10",
+  "name": "HP Envy x360",
+  "price": 3400000,
+  "category": "laptops",
+  "brand": "HP",
+  "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=400",
+  "description": "HP Envy x360 Convertible, AMD Ryzen 7, 16GB RAM, 512GB SSD",
+  "stock": 9,
+  "rating": 4.6
+},
+{
+  "id": "11",
+  "name": "MSI Prestige 14",
+  "price": 4200000,
+  "category": "laptops",
+  "brand": "MSI",
+  "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
+  "description": "MSI Prestige 14, Intel Core i7, 16GB RAM, 512GB SSD",
+  "stock": 6,
+  "rating": 4.5
+},
+{
+  "id": "12",
+  "name": "Huawei MateBook D15",
+  "price": 2650000,
+  "category": "laptops",
+  "brand": "Huawei",
+  "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400",
+  "description": "Huawei MateBook D15, AMD Ryzen 5, 8GB RAM, 256GB SSD",
+  "stock": 11,
+  "rating": 4.4
+},
+{
+  "id": "13",
+  "name": "Razer Blade 15",
+  "price": 8200000,
+  "category": "laptops",
+  "brand": "Razer",
+  "image": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=400",
+  "description": "Razer Blade 15 Gaming, Intel Core i9, RTX 4070, 32GB RAM",
+  "stock": 3,
+  "rating": 4.9
+},
+{
+  "id": "14",
+  "name": "Microsoft Surface Laptop 5",
+  "price": 4900000,
+  "category": "laptops",
+  "brand": "Microsoft",
+  "image": "https://images.unsplash.com/photo-1618424181497-157f25b6ddd5?w=400",
+  "description": "Surface Laptop 5, Intel Core i7, 16GB RAM, 512GB SSD",
+  "stock": 8,
+  "rating": 4.7
+},
+{
+  "id": "15",
+  "name": "Google Pixel 8 Pro",
+  "price": 3900000,
+  "category": "phones",
+  "brand": "Google",
+  "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400",
+  "description": "Google Pixel 8 Pro, 12GB RAM, 256GB, Tensor G3",
+  "stock": 10,
+  "rating": 4.7
+},
+{
+  "id": "16",
+  "name": "OnePlus 12",
+  "price": 3200000,
+  "category": "phones",
+  "brand": "OnePlus",
+  "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
+  "description": "OnePlus 12, Snapdragon 8 Gen 3, 12GB RAM, 256GB",
+  "stock": 14,
+  "rating": 4.6
+},
+{
+  "id": "17",
+  "name": "Xiaomi 14 Pro",
+  "price": 2800000,
+  "category": "phones",
+  "brand": "Xiaomi",
+ "image": "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400",
+  "description": "Xiaomi 14 Pro, Snapdragon 8 Gen 3, 12GB RAM, 512GB",
+  "stock": 18,
+  "rating": 4.5
+},
+{
+  "id": "18",
+  "name": "Motorola Edge 40 Pro",
+  "price": 2100000,
+  "category": "phones",
+  "brand": "Motorola",
+ "image": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400",
+  "description": "Motorola Edge 40 Pro, Snapdragon 8 Gen 2, 8GB RAM",
+  "stock": 12,
+  "rating": 4.3
+},
+{
+  "id": "19",
+  "name": "OPPO Find X6 Pro",
+  "price": 3500000,
+  "category": "phones",
+  "brand": "OPPO",
+ "image": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400",
+  "description": "OPPO Find X6 Pro, Snapdragon 8 Gen 2, 16GB RAM",
+  "stock": 9,
+  "rating": 4.6
+},
+{
+  "id": "20",
+  "name": "Realme GT 5 Pro",
+  "price": 1950000,
+  "category": "phones",
+  "brand": "Realme",
+  "image": "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=400",
+  "description": "Realme GT 5 Pro, Snapdragon 8 Gen 3, 12GB RAM",
+  "stock": 20,
+  "rating": 4.4
+},
+{
+  "id": "21",
+  "name": "Vivo X100 Pro",
+  "price": 3300000,
+  "category": "phones",
+  "brand": "Vivo",
+  "image": "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=400",
+  "description": "Vivo X100 Pro, Dimensity 9300, 16GB RAM, cámara Zeiss",
+  "stock": 11,
+  "rating": 4.7
+},
+{
+  "id": "22",
+  "name": "Nothing Phone 2",
+  "price": 2400000,
+  "category": "phones",
+  "brand": "Nothing",
+  "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400",
+  "description": "Nothing Phone 2, Snapdragon 8+ Gen 1, 12GB RAM",
+  "stock": 13,
+  "rating": 4.5
+},
+{
+  "id": "23",
+  "name": "Honor Magic 6 Pro",
+  "price": 2950000,
+  "category": "phones",
+  "brand": "Honor",
+  "image": "https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=400",
+  "description": "Honor Magic 6 Pro, Snapdragon 8 Gen 3, 12GB RAM",
+  "stock": 10,
+  "rating": 4.6
+},
+{
+  "id": "24",
+  "name": "Asus Zenfone 11 Ultra",
+  "price": 3100000,
+  "category": "phones",
+  "brand": "Asus",
+  "image": "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400",
+  "description": "Asus Zenfone 11 Ultra, Snapdragon 8 Gen 3, 16GB RAM",
+  "stock": 7,
+  "rating": 4.7
+},
+{
+  "id": "25",
+  "name": "iPad Pro 12.9",
+  "price": 5200000,
+  "category": "tablets",
+  "brand": "Apple",
+  "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400",
+  "description": "iPad Pro 12.9 pulgadas, Chip M2, 256GB, 5G",
+  "stock": 6,
+  "rating": 4.9
+},
+{
+  "id": "26",
+  "name": "Samsung Galaxy Tab S9 Ultra",
+  "price": 4800000,
+  "category": "tablets",
+  "brand": "Samsung",
+  "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400",
+  "description": "Galaxy Tab S9 Ultra, 14.6 pulgadas, Snapdragon 8 Gen 2",
+  "stock": 8,
+  "rating": 4.8
+},
+{
+  "id": "27",
+  "name": "iPad Air 5",
+  "price": 2800000,
+  "category": "tablets",
+  "brand": "Apple",
+  "image": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400",
+  "description": "iPad Air 10.9 pulgadas, Chip M1, 64GB, WiFi",
+  "stock": 12,
+  "rating": 4.7
+},
+{
+  "id": "28",
+  "name": "Samsung Galaxy Tab S8",
+  "price": 2400000,
+  "category": "tablets",
+  "brand": "Samsung",
+  "image": "https://images.unsplash.com/photo-1561154464-82e9adf32764?w=400",
+  "description": "Galaxy Tab S8, 11 pulgadas, S Pen incluido, 128GB",
+  "stock": 10,
+  "rating": 4.6
+},
+{
+  "id": "29",
+  "name": "Lenovo Tab P12 Pro",
+  "price": 1950000,
+  "category": "tablets",
+  "brand": "Lenovo",
+  "image": "https://images.unsplash.com/photo-1587033411391-5d9e51cce126?w=400",
+  "description": "Lenovo Tab P12 Pro, 12.6 pulgadas AMOLED, Snapdragon 870",
+  "stock": 9,
+  "rating": 4.5
+},
+{
+  "id": "30",
+  "name": "Microsoft Surface Pro 9",
+  "price": 3900000,
+  "category": "tablets",
+  "brand": "Microsoft",
+  "image": "https://images.unsplash.com/photo-1587033411391-5d9e51cce126?w=400",
+  "description": "Surface Pro 9, Intel Core i5, 8GB RAM, 256GB SSD",
+  "stock": 7,
+  "rating": 4.7
+},
+{
+  "id": "31",
+  "name": "Xiaomi Pad 6 Pro",
+  "price": 1650000,
+  "category": "tablets",
+  "brand": "Xiaomi",
+  "image": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400",
+  "description": "Xiaomi Pad 6 Pro, 11 pulgadas, Snapdragon 8+ Gen 1",
+  "stock": 14,
+  "rating": 4.4
+},
+{
+  "id": "32",
+  "name": "Huawei MatePad Pro",
+  "price": 2200000,
+  "category": "tablets",
+  "brand": "Huawei",
+  "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400",
+  "description": "MatePad Pro 12.6 pulgadas, Kirin 9000, M-Pencil",
+  "stock": 8,
+  "rating": 4.5
+},
+{
+  "id": "33",
+  "name": "Amazon Fire HD 10",
+  "price": 650000,
+  "category": "tablets",
+  "brand": "Amazon",
+  "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400",
+  "description": "Fire HD 10, 10.1 pulgadas, 32GB, Ideal para contenido",
+  "stock": 20,
+  "rating": 4.2
+},
+{
+  "id": "34",
+  "name": "OPPO Pad Air",
+  "price": 1200000,
+  "category": "tablets",
+  "brand": "OPPO",
+  "image": "https://images.unsplash.com/photo-1561154464-82e9adf32764?w=400",
+  "description": "OPPO Pad Air, 10.36 pulgadas, Snapdragon 680",
+  "stock": 11,
+  "rating": 4.3
+}
   ],
+
+
+
+
+
+
+
+
+
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "email": "admin@store.com",
       "password": "admin123",
       "name": "Admin",
       "role": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "email": "user@test.com",
       "password": "test123",
       "name": "Usuario Test",
@@ -51,5 +403,73 @@
     }
   ],
   "cart": [],
-  "orders": []
+
+  
+
+
+
+
+
+
+
+
+
+
+  "orders": [
+    {
+      "id": "8184",
+      "orderNumber": "ORD-GAMVB8EMO",
+      "customer": {
+        "name": "SEBASTIAN FELIPE GOMEZ SUAREZ",
+        "email": "sebastiangs16241624@gmail.com",
+        "phone": "3025071610",
+        "address": "Calle 40 # 101A-28",
+        "city": "Medellin",
+        "paymentMethod": "credit-card"
+      },
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop HP Pavilion 15",
+          "price": 2500000,
+          "category": "laptops",
+          "brand": "HP",
+          "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
+          "description": "Laptop HP Pavilion 15.6 pulgadas, Intel Core i5, 8GB RAM, 512GB SSD",
+          "stock": 10,
+          "rating": 4.5,
+          "quantity": 2
+        },
+        
+        {
+          "id": "3",
+          "name": "Samsung Galaxy S24 Ultra",
+          "price": 3800000,
+          "category": "phones",
+          "brand": "Samsung",
+          "image": "data:image/jpeg;base64,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",
+          "description": "Samsung Galaxy S24 Ultra 512GB con S Pen",
+          "stock": 8,
+          "rating": 4.8,
+          "quantity": 2
+        },
+        {
+          "id": "2",
+          "name": "iPhone 15 Pro Max",
+          "price": 4500000,
+          "category": "phones",
+          "brand": "Apple",
+          "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400",
+          "description": "iPhone 15 Pro Max 256GB, Titanio Negro",
+          "stock": 5,
+          "rating": 5,
+          "quantity": 2
+        }
+      ],
+      "total": 21600000,
+      "date": "2025-12-13T18:37:48.864Z",
+      "status": "pending"
+    }
+
+  ]
 }
