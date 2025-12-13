@@ -32,17 +32,26 @@ const Products = () => {
   const filterProducts = () => {
     let filtered = products;
 
-    // Filtrar por búsqueda
+    // 🐛 BUG 6 y 8: Búsqueda no funciona bien (busca en campo equivocado y es case-sensitive)
     if (searchTerm) {
       filtered = filtered.filter(product =>
-        product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        product.description.toLowerCase().includes(searchTerm.toLowerCase())
+        product.brand.includes(searchTerm) // BUG 6: Busca en 'brand' en vez de 'name'
+        // BUG 8: Quitamos .toLowerCase() para que sea case-sensitive
       );
     }
 
-    // Filtrar por categoría
+    // 🐛 BUG 7: Filtro de categoría "laptops" muestra phones
     if (selectedCategory !== 'all') {
-      filtered = filtered.filter(product => product.category === selectedCategory);
+      if (selectedCategory === 'laptops') {
+        filtered = filtered.filter(product => product.category === 'phones'); // BUG: laptops muestra phones
+      } else {
+        filtered = filtered.filter(product => product.category === selectedCategory);
+      }
+    }
+
+    // 🐛 BUG 9: Filtro "Todas las categorías" muestra solo 3
+    if (selectedCategory === 'all') {
+      filtered = filtered.slice(0, 3); // BUG: Muestra solo los primeros 3 productos
     }
 
     setFilteredProducts(filtered);
