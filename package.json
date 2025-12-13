@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce-cypress-qa",
+  "version": "1.0.0",
+  "description": "Professional E-Commerce Testing Suite - React + Cypress Automation",
+  "scripts": {
+    "frontend": "cd frontend && npm start",
+    "backend": "json-server --watch db.json --port 3001",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "npm run cy:run"
+  },
+  "keywords": ["cypress", "testing", "e2e", "qa", "automation", "react"],
+  "author": "Sebastian Gomez",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "json-server": "^0.17.4"
+  }
+}

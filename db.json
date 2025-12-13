@@ -1,0 +1,55 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop HP Pavilion 15",
+      "price": 2500000,
+      "category": "laptops",
+      "brand": "HP",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
+      "description": "Laptop HP Pavilion 15.6 pulgadas, Intel Core i5, 8GB RAM, 512GB SSD",
+      "stock": 10,
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "iPhone 15 Pro Max",
+      "price": 4500000,
+      "category": "phones",
+      "brand": "Apple",
+      "image": "https://images.unsplash.com/photo-1592286927505-739456b640a0?w=400",
+      "description": "iPhone 15 Pro Max 256GB, Titanio Negro",
+      "stock": 5,
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Samsung Galaxy S24 Ultra",
+      "price": 3800000,
+      "category": "phones",
+      "brand": "Samsung",
+      "image": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400",
+      "description": "Samsung Galaxy S24 Ultra 512GB con S Pen",
+      "stock": 8,
+      "rating": 4.8
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@store.com",
+      "password": "admin123",
+      "name": "Admin",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "user@test.com",
+      "password": "test123",
+      "name": "Usuario Test",
+      "role": "user"
+    }
+  ],
+  "cart": [],
+  "orders": []
+}
