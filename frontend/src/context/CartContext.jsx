@@ -41,17 +41,18 @@ export const CartProvider = ({ children }) => {
     }
   };
 
-  // Eliminar producto del carrito
+  // 🐛 BUG 4: Eliminar producto del carrito - elimina TODO
   const removeFromCart = (productId) => {
-    setCart(cart.filter(item => item.id !== productId));
+    setCart([]); // BUG: Vacía todo el carrito en vez de eliminar solo uno
   };
 
-  // Actualizar cantidad
+  // 🐛 BUG 3: Actualizar cantidad - permite negativos
   const updateQuantity = (productId, quantity) => {
-    if (quantity <= 0) {
-      removeFromCart(productId);
-      return;
-    }
+    // BUG: Comenté la validación de cantidad <= 0
+    // if (quantity <= 0) {
+    //   removeFromCart(productId);
+    //   return;
+    // }
     
     setCart(cart.map(item =>
       item.id === productId
@@ -60,19 +61,20 @@ export const CartProvider = ({ children }) => {
     ));
   };
 
-  // Limpiar carrito
+  // 🐛 BUG 2: Limpiar carrito - no funciona
   const clearCart = () => {
-    setCart([]);
+    // setCart([]); // BUG: Comenté la línea que vacía el carrito
+    console.log('Intentando vaciar carrito...');
   };
 
-  // Calcular total
+  // 🐛 BUG 1: Calcular total - multiplica por 1.5 extra
   const getTotal = () => {
-    return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+    return cart.reduce((total, item) => total + (item.price * item.quantity * 1.5), 0); // BUG: Multiplica por 1.5
   };
 
-  // Obtener cantidad total de items
+  // 🐛 BUG 5: Obtener cantidad total de items - siempre retorna 0
   const getCartCount = () => {
-    return cart.reduce((count, item) => count + item.quantity, 0);
+    return 0; // BUG: Siempre retorna 0 en vez de contar items
   };
 
   const value = {
