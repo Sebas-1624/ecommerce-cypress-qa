@@ -9,10 +9,19 @@
     "cy:run": "cypress run",
     "test": "npm run cy:run"
   },
-  "keywords": ["cypress", "testing", "e2e", "qa", "automation", "react"],
+  "keywords": [
+    "cypress",
+    "testing",
+    "e2e",
+    "qa",
+    "automation",
+    "react"
+  ],
   "author": "Sebastian Gomez",
   "license": "MIT",
   "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
     "cypress": "^13.6.0",
     "json-server": "^0.17.4"
   }
