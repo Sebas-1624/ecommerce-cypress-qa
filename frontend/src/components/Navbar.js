@@ -36,9 +36,9 @@ const Navbar = () => {
             <Link to="/" className="hover:text-blue-200 transition">
               Inicio
             </Link>
-            {/* 🐛 BUG 15: Link "Productos" redirige a home en vez de /products */}
-            <Link to="/" className="hover:text-blue-200 transition">
-              Productos
+            {/* BUG 15: DESACTIVADO temporalmente para testing */}
+              <Link to="/products" className="hover:text-blue-200 transition">
+               Productos
             </Link>
             <Link to="/cart" className="relative hover:text-blue-200 transition">
               Carrito

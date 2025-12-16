@@ -12,6 +12,13 @@ module.exports = defineConfig({
     screenshotOnRunFailure: true,
     specPattern: 'cypress/e2e/features/**/*.feature',
     
+    // ✅ SOLUCIÓN CORS
+    chromeWebSecurity: false,
+    
+    defaultCommandTimeout: 10000,
+    requestTimeout: 10000,
+    responseTimeout: 10000,
+    
     async setupNodeEvents(on, config) {
       await addCucumberPreprocessorPlugin(on, config);
       

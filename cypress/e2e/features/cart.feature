@@ -9,9 +9,9 @@ Feature: Shopping Cart Management
 
   @bug-1 @high
   Scenario: Cart total calculation is incorrect
-    When I add a product with price "$2,500,000" to the cart
-    Then the cart total should be "$2,500,000"
-    But the cart total shows "$3,750,000"
+    When I add a product with price "$ 2.500.000" to the cart
+    Then the cart total should be "$ 2.500.000"
+    But the cart total shows "$ 3.750.000"
 
   @bug-2 @high
   Scenario: Clear cart button does not work

@@ -4,7 +4,7 @@
   "description": "Professional E-Commerce Testing Suite - React + Cypress Automation",
   "scripts": {
     "frontend": "cd frontend && npm start",
-    "backend": "json-server --watch db.json --port 3001",
+    "backend": "json-server --watch db.json --port 3001 --middlewares ./server.js",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "test": "npm run cy:run"

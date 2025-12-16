@@ -33,7 +33,7 @@ const Cart = () => {
             {cart.map((item) => (
               <div 
                 key={item.id} 
-                className="flex items-center gap-4 p-4 border-b last:border-b-0"
+                className="cart-item flex items-center gap-4 p-4 border-b last:border-b-0"
               >
                 <img 
                   src={item.image} 
@@ -53,7 +53,7 @@ const Cart = () => {
                   >
                     -
                   </button>
-                  <span className="font-semibold w-8 text-center">{item.quantity}</span>
+                  <span className="text-xl font-semibold w-8 text-center">{item.quantity}</span>
                   <button
                     onClick={() => updateQuantity(item.id, item.quantity + 1)}
                     className="bg-gray-200 px-3 py-1 rounded hover:bg-gray-300"

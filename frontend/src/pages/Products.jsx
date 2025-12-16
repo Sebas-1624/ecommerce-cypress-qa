@@ -49,10 +49,10 @@ const Products = () => {
       }
     }
 
-    // 🐛 BUG 9: Filtro "Todas las categorías" muestra solo 3
-    if (selectedCategory === 'all') {
-      filtered = filtered.slice(0, 3); // BUG: Muestra solo los primeros 3 productos
-    }
+    // ✅ CORREGIDO: BUG 9 - Ahora muestra todos los productos cuando la categoría es "all"
+    // COMENTADO: if (selectedCategory === 'all') {
+    //   filtered = filtered.slice(0, 3); // BUG: Muestra solo los primeros 3 productos
+    // }
 
     setFilteredProducts(filtered);
   };
