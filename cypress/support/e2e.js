@@ -1,15 +1,7 @@
-// ***********************************************************
-// cypress/support/e2e.js
-// SOLUCIÓN COMPLETA - Fixtures + Interceptors
-// ***********************************************************
-
 import './commands';
 
-// ============================================
-// 1. MANEJO DE ERRORES
-// ============================================
+// Manejar errores de Cypress
 Cypress.on('uncaught:exception', (err, runnable) => {
-  // Ignorar errores de red y React que no afectan tests
   if (
     err.message.includes('Network Error') ||
     err.message.includes('ERR_EMPTY_RESPONSE') ||
@@ -21,15 +13,11 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   return true;
 });
 
-// ============================================
-// 2. FIXTURES - MOCKEAR BACKEND COMPLETO
-// ============================================
+// Interceptores globales - Se ejecutan antes de cada test
 beforeEach(() => {
-  // ----------------------------------------
-  // PRODUCTOS - Mockear con fixtures
-  // ----------------------------------------
+  // Cargar fixture de productos
   cy.fixture('products.json').then((products) => {
-    // Interceptar GET /products (todos)
+    // Interceptor para GET /products
     cy.intercept('GET', '**/products*', {
       statusCode: 200,
       body: products,
@@ -39,7 +27,7 @@ beforeEach(() => {
       },
     }).as('getProducts');
 
-    // Interceptar GET /products/:id (individual)
+    // Interceptor para GET /products/:id
     cy.intercept('GET', '**/products/*', (req) => {
       const productId = req.url.split('/').pop().split('?')[0];
       const product = products.find(p => p.id === productId);
@@ -55,9 +43,7 @@ beforeEach(() => {
     }).as('getProduct');
   });
 
-  // ----------------------------------------
-  // USUARIOS - Mockear login
-  // ----------------------------------------
+  // Interceptor para GET /users (login)
   cy.intercept('GET', '**/users*', (req) => {
     const urlParams = new URLSearchParams(req.url.split('?')[1]);
     const email = urlParams.get('email');
@@ -92,9 +78,7 @@ beforeEach(() => {
     });
   }).as('getUsers');
 
-  // ----------------------------------------
-  // ÓRDENES - Mockear checkout
-  // ----------------------------------------
+  // Interceptor para POST /orders (crear orden)
   cy.intercept('POST', '**/orders*', (req) => {
     req.reply({
       statusCode: 201,
@@ -110,7 +94,7 @@ beforeEach(() => {
     });
   }).as('postOrders');
 
-  // Interceptar GET /orders
+  // Interceptor para GET /orders (obtener órdenes)
   cy.intercept('GET', '**/orders*', {
     statusCode: 200,
     body: [],

@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+    <div className="product-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
       <Link to={`/product/${product.id}`}>
         <img 
           src={product.image} 
